@@ -1,0 +1,594 @@
+
+	body {
+		color: #777;
+		background-color: #fff;
+		font-family: 'Poppins', sans-serif!important;
+		font-weight: 300;
+		font-size:14px;
+	}
+	
+	p {
+		font-family: 'Poppins', sans-serif;
+	}
+	
+	b, strong {
+		font-weight: 600!important;
+		color:#000;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		color:#000;
+		font-family: 'Poppins', sans-serif!important;
+		font-weight:500;
+		margin:0;
+		margin-bottom:10px;
+	}
+	
+	.editor-post-title__block .editor-post-title__input {
+		font-weight: 500;
+		color:#000;
+		font-family: 'Poppins', sans-serif!important;
+		margin:0;
+		margin-bottom:10px;
+		font-size:90px;
+	}
+	
+	.wp-block {
+		max-width: 980px;
+	}
+	
+	/* Width of "wide" blocks */
+	.wp-block[data-align="wide"] {
+		max-width: 1080px;
+	}
+	
+	/* Width of "full-wide" blocks */
+	.wp-block[data-align="full"] {
+		max-width: none;
+	}
+	
+	.has-vivid-cyan-blue-background-color.has-vivid-cyan-blue-background-color {
+		background-color: #0693e3;
+	}
+	
+	.has-light-green-cyan-background-color.has-light-green-cyan-background-color {
+		background-color: #7bdcb5;
+	}
+	
+	.has-vivid-green-cyan-background-color.has-vivid-green-cyan-background-color {
+		background-color: #00d084;
+	}
+	
+	.has-very-light-gray-background-color.has-very-light-gray-background-color {
+		background-color: #eee;
+	}
+	
+	.wp-block-quote {
+		border-left: 4px solid #000;
+		padding-left: 1em;
+	}
+	
+	.wp-block-pullquote {
+		width:100%;
+	}
+	
+	.wp-block-pullquote .wp-block-pullquote__citation {
+		color:#333!important;
+	}
+	
+	.wp-block-verse{
+		background:rgba(128,128,128,.1);
+		border:none;
+		border-width:0;
+		border:4px solid rgba(128,128,128,.4);
+		box-shadow:none;
+		font-family:Alegreya,serif;
+		font-size:1em;
+		font-style:italic;
+		padding:1em 1.5em 1em 1.2em;
+		width:90%
+	}
+
+	b,
+	strong {
+		font-weight: 400;
+	}
+	
+	cite,
+	dfn,
+	em,
+	i {
+		font-style: italic;
+	}
+	
+	mark, ins {
+		background: none repeat scroll 0 0 #111;
+		text-decoration: none;
+		color: #fff;
+		padding: 0px 10px;
+		display: inline-block;
+		border-radius: 2px;
+	}
+	
+	code,
+	kbd,
+	tt,
+	var,
+	samp,
+	pre {
+		font-family: monospace, serif;
+		font-size: 15px;
+		-webkit-hyphens: none;
+		-moz-hyphens:    none;
+		-ms-hyphens:     none;
+		hyphens:         none;
+		line-height: 1.6;
+		background:transparent!important;
+	}
+	
+	pre {
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing:    border-box;
+		box-sizing:         border-box;
+		margin-bottom: 24px;
+		max-width: 100%;
+		overflow: auto;
+		padding: 12px;
+		white-space: pre;
+		white-space: pre-wrap;
+		word-wrap: break-word;
+	}
+	
+	blockquote,
+	q {
+		-webkit-hyphens: none;
+		-moz-hyphens:    none;
+		-ms-hyphens:     none;
+		hyphens:         none;
+		quotes: none;
+	}
+	
+	blockquote:before,
+	blockquote:after,
+	q:before,
+	q:after {
+		content: "";
+		content: none;
+	}
+	
+	blockquote {
+		color: #000;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 30px;
+		margin:0;
+		margin-bottom: 24px!important;
+		border-left:4px #222 solid;
+		padding:20px 20px 20px 40px!important;
+	}
+	
+	blockquote p {
+		color: #000;
+		margin-bottom:0px;
+		font-weight:600;
+		font-size: 15px;
+	}
+	
+	blockquote.large {
+		background-color: #222;
+		border-radius: 3px;
+		border-left: none;
+		padding: 8%;
+		font-family: 'Poppins', sans-serif;
+		position: relative;
+		padding-left: 12%;
+		padding-bottom: 6%;
+		margin:40px 0;
+		font-weight:500!important;
+	}
+	
+	.wp-block-quote.is-large p, .wp-block-quote.is-style-large p {
+		font-weight:500!important;
+	}
+	
+	blockquote.large p {
+		color:#fff;
+		font-size:30px;
+		font-weight:600;
+		line-height:40px;
+		margin-bottom:20px;
+		font-family: 'Poppins', sans-serif;
+	}
+	
+	blockquote span {
+		display:block;
+		margin-top:20px;
+		font-weight:400;
+		font-size:12px;
+		font-style:normal;
+		color:#999;
+	}
+	
+	blockquote.large::before {
+		content: '\f10d';
+		font-family: FontAwesome;
+		font-size: 1.2em;
+		display: block;
+		position: absolute;
+		z-index: 1;
+		top: 18%;
+		left: 8%;
+		font-weight: 400;
+		font-style: normal;
+		color: #fff;
+		opacity: 0.25;
+	}
+	
+	blockquote cite,
+	blockquote small {
+		color: #555d66;
+		font-size: 14px;
+		font-weight: 400;
+	}
+	
+	blockquote.large cite {
+		font-weight:400;
+		color:#999;
+	}
+	
+	blockquote.large small {
+		font-weight:400;
+		color:#999;
+		font-size: 12px;
+	}
+	
+	blockquote em,
+	blockquote i,
+	blockquote cite {
+		font-style: normal;
+	}
+	
+	blockquote strong,
+	blockquote b {
+		font-weight: 400;
+	}
+	
+	.editor-styles-wrapper .wp-block-pullquote {
+		border-top: 4px solid #555d66;
+		border-bottom: 4px solid #555d66;
+		border-left: none;
+		color: #40464d;
+	}
+	
+	.wp-block-pullquote {
+		padding: 3em 0;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom:24px;
+		text-align: center;
+	}
+	
+	.wp-block-pullquote blockquote {
+		border:none;
+		margin-bottom:0!important;
+	}
+	
+	.wp-block-pullquote cite, .wp-block-pullquote footer, .wp-block-pullquote__citation {
+		color: #777;
+		text-transform:none;
+		font-size: 14px;
+		font-weight: 400;
+	}
+	
+	.wp-block-pullquote.alignleft {
+		margin-right:20px;
+	}
+	
+	.wp-block-pullquote.alignright {
+		margin-left:20px;
+	}
+	
+	small {
+		font-size: smaller;
+	}
+	
+	big {
+		font-size: 125%;
+	}
+	
+	sup,
+	sub {
+		font-size: 75%;
+		height: 0;
+		line-height: 0;
+		position: relative;
+		vertical-align: baseline;
+	}
+	
+	sup {
+		bottom: 1ex;
+	}
+	
+	sub {
+		top: .5ex;
+	}
+	
+	dl {
+		margin-bottom: 24px;
+	}
+	
+	dt {
+		font-weight: bold;
+	}
+	
+	dd {
+		margin-bottom: 24px;
+		margin-left:0;
+	}
+	
+	ul,
+	ol {
+		list-style: none;
+		margin: 0 0 24px 20px;
+	}
+	
+	ul {
+		list-style: disc;
+	}
+	
+	ul ul, ol ul {
+		list-style: disc;	
+	}
+	
+	ol {
+		list-style: decimal;
+	}
+	
+	li > ul,
+	li > ol {
+		margin: 10px 0 0 20px;
+	}
+	
+	li {
+		line-height: 20px;
+		color:#333;
+		margin-bottom:10px!important;
+	}
+		
+	figure {
+		margin:0;
+		position:relative;
+		display: inline-block;
+	}
+	
+	figure img {
+		max-width:100%;
+	}
+	
+	img {
+		border: 0 none;
+		max-width: 100%;
+		vertical-align: middle;
+		height: auto;
+	}
+	
+	.wp-caption-dt img {
+		max-width: 980px;
+	}
+	
+	.wp-block-freeform.block-library-rich-text__tinymce a {
+		color: #000;
+		border-bottom: #ccc solid 1px;
+		padding-bottom: 2px;
+	}
+	
+	.wp-caption-dd {
+		font-size: 11px;
+		font-weight: 400;
+		color: #999;
+	}
+	
+	fieldset {
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		margin: 0 0 24px;
+		padding: 11px 12px 0;
+	}
+	
+	legend {
+		white-space: normal;
+	}
+	
+	button,	input {
+		line-height: normal;
+	}
+	
+	input,
+	textarea {
+		background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0)); /* Removing the inner shadow, rounded corners on iOS inputs */
+	}
+	
+	button, html input[type="button"], input[type="reset"], input[type="submit"] {
+		cursor: pointer;
+	}
+	
+	button[disabled],
+	input[disabled] {
+		cursor: default;
+	}
+	
+	input[type="checkbox"],
+	input[type="radio"] {
+		padding: 0;
+	}
+	
+	input[type="search"] {
+
+		-webkit-appearance: textfield;
+	}
+	
+	input[type="search"]::-webkit-search-decoration {
+		-webkit-appearance: none;
+	}
+	
+	button::-moz-focus-inner, input::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+	
+	textarea {
+		overflow: auto;
+		vertical-align: top;
+	}
+	
+	table, th, td {
+		border: 1px solid rgba(0, 0, 0, 0.1);
+	}
+	
+	table, th, td {
+		border: 1px solid rgba(0, 0, 0, 0.1);
+	}
+	
+	table {
+		border-collapse: separate;
+		border-spacing: 0;
+		border-width: 1px 0 0 1px;
+		margin-bottom: 24px;	
+		width: 100%;
+	}
+	
+	caption, th, td {
+		font-weight: normal;
+		text-align: left;
+	}
+	
+	th {
+		border-width: 0 1px 1px 0;
+		padding: 10px;
+	}
+	
+	td {
+		border-width: 0 1px 1px 0;
+		padding: 10px;
+	}
+	
+	del {
+		color: #767676;
+	}
+	
+	hr {
+		border: 0;
+		height: 35px;
+		width:100%;
+		float:none;
+		margin:0;
+		display:inline-block;
+	}
+	
+	hr.small {
+		height:20px;
+	}
+	
+	hr:after {
+		clear: both;
+		content: " ";
+		display: block;
+		height: 0;
+		visibility: hidden;
+	}
+	
+	::selection {
+		background: #000;
+		color: #fff;
+		text-shadow: none;
+	}
+	
+	::-moz-selection {
+		background: #000;
+		color: #fff;
+		text-shadow: none;
+	}
+		
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Poppins', sans-serif!important;
+		font-weight:500;
+		color:#000;
+		margin-bottom:10px;
+	}
+	
+	h1{
+		font-size:48px!important;
+		line-height: 60px!important;
+		margin-left:-3px;
+	}
+	
+	h2{
+		font-size: 36px!important;
+		line-height: 48px!important;
+		margin-left:-1px;
+	}
+	
+	h3{
+		font-size:30px!important;
+		line-height: 40px!important;
+		margin-left:-1px;
+	}
+	
+	h4{
+		font-size:24px!important;
+		line-height: 36px!important;
+		margin-left:-1px;	
+	}
+	
+	h5{
+		font-size:18px!important;
+		line-height: 24px!important;
+		margin-left:-1px;
+	}
+	
+	h6{
+		font-size:14px;
+		line-height: 18px;
+	}
+	
+	p {
+		font-size:16px;
+		margin-bottom:15px;
+		margin-top:0;
+		line-height:28px;
+		color:#777;
+	}
+	
+	.wp-block-cover .wp-block-paragraph {
+		color:#fff!important;
+		font-size: 36px!important;
+	}
+	
+	p.no-margins {
+		margin-bottom:0;
+	}
+	
+	p.is-large-text {
+		font-size: 36px;
+		line-height: 80px;
+	}
+	
+	a:hover, a:active {
+	  outline: 0;
+	  color: #000;
+	}
+	
+	a {
+        text-decoration: none;
+        -webkit-transition: background-color .1s ease, border .1s ease, color .3s ease, opacity .1s ease-in-out, outline .1s ease;
+                transition: background-color .1s ease, border .1s ease, color .3s ease, opacity .1s ease-in-out, outline .1s ease;
+    }
+	
+	a {
+		color: #333;
+		outline: 0;
+	}
+	
+	a:hover {
+		text-decoration:none;
+	}

@@ -1,0 +1,305 @@
+/*****************************************************
+ * Styles for Harington meta boxes
+ *****************************************************/
+
+#poststuff .inside {
+    margin: 0px;
+	padding: 0px;
+}
+
+#poststuff #clapat_core_page_options .inside, #poststuff #clapat_core_portfolio_options .inside {
+	margin: 0px;
+	padding: 0px;
+}
+
+.clapat-metabox {
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-left: 1px solid #e2e4e7;
+    border-right: 1px solid #e2e4e7;
+    box-sizing: border-box;
+	padding: 20px;
+}
+
+#clapat_core_portfolio_options .clapat-metabox {
+    overflow: hidden;
+    background-color: #fff;
+    border-left: 1px solid #e2e4e7;
+    border-right: 1px solid #e2e4e7;
+    box-sizing: border-box;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    margin-top: 4px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+/* Style the buttons that are used to open the tab content */
+.clapat-metabox-tab button {
+  display: block;
+  background-color: #eaeaea;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-weight: 600;
+  box-sizing:border-box;
+  border-bottom: #E7E7E7 solid 1px;
+}
+
+/* Change background color of buttons on hover */
+.clapat-metabox-tab button:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* Create an active/current "tab button" class */
+.clapat-metabox-tab button.active {
+  background-color: #fff;
+}
+
+/* Options tabs */
+.clapat-metabox-tab {
+    float: left;
+    width: 30%;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+    padding: 20px;
+    width: 70%;
+    border-left: none;
+    height: auto;
+    display: none;
+    float: left;
+    box-sizing: border-box;
+	background-color:#fff;
+	min-height: 300px;
+}
+
+.tabcontent.active{
+ 	display: block;
+}
+
+.clapat-metabox-admin-notices {
+    margin: 0;    
+    background-color: #FCF8E3;
+    color: #C09853;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+.clapat-metabox-notice-save {
+    color: #C09853;
+	padding: 8px 35px 8px 14px;
+	border-bottom: 1px solid #E7E7E7;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+.clapat-metabox-section-title {
+    margin-top: 0;
+    line-height: 2em;
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.clapat-metabox-section-desc, .clapat-metabox-desc {
+	color:#777;
+}
+
+.clapat-metabox-field {
+    margin-top: 30px;
+    line-height: 2em;
+    border-top: 1px solid #E7E7E7;
+    padding: 20px 0px 0px 0px;
+}
+
+#clapat_core_portfolio_options .clapat-metabox-field {
+    margin-top: 0px;
+    line-height: 2em;
+	border-top:none;
+    border-bottom: 1px solid #E7E7E7;
+    padding: 20px 20px 30px 20px;
+    margin-bottom: -1px;
+}
+
+.clapat-metabox select, .clapat-metabox input, .clapat-metabox textarea {
+	border-radius:4px;
+	display:block;
+	margin-top:20px;
+	margin-bottom:10px;
+	min-width:300px;
+}
+
+.clapat-metabox textarea {
+	width:100%;
+	box-sizing:border-box;
+	min-height:160px;
+}
+
+.upload-clapat-metabox-img.button-primary {
+	margin-right:10px;
+	margin-left:1px;
+}
+
+.clapat-metabox-img-container img {
+    height: 150px;
+    width: auto;
+}
+
+#clapat_elymor_portfolio_options .tablinks:nth-child(2) {
+	display:none;
+}
+
+
+.clapat-media-gallery-metabox {
+	display:block;	
+}
+
+.clapat-media-gallery-metabox::after, .clapat-metabox-gallery-images::after {
+	clear: both;
+	content: " ";
+	display: table;
+}
+
+.clapat-metabox-gallery-item {
+	width:166px;
+	height:166px;
+	position: relative;
+	float: left;
+	padding: 8px;
+	margin: 0;
+	color: #3c434a;
+	list-style: none;
+	text-align: center;
+	-webkit-user-select: none;
+	user-select: none;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	margin-right: 16px;
+	margin-bottom: 16px;
+}
+
+.clapat-metabox-gallery-item-remove {
+	position: absolute;
+	z-index: 10;
+	right: -6px;
+	top: -6px;
+	width: 24px;
+	height: 24px;
+	background-color: #2271b1;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 2px;
+	fill: #FFF;
+	cursor:pointer;
+	box-shadow: inset 0 0 1px #FFF,inset 0 0 0 1px #FFF;
+	border: 1px solid #2271b1;
+}
+
+.clapat-metabox-gallery-item-remove:hover {
+	 background-color: #1b5d92;
+}
+
+.clapat-metabox-gallery-img {
+	width:100%;
+	height: 100%;
+	position:relative;
+	display:block;
+	z-index:100;	
+	object-position: center; 
+	object-fit: cover;
+	overflow:hidden;
+	z-index: 1;
+}
+
+.clapat-metabox-gallery-item img {
+	position:relative;
+	z-index:1;
+	cursor: default;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: block;
+	z-index: 100;
+	object-position: center;
+	object-fit: cover;
+}
+
+.clapat-metabox-gallery-buttons {
+	margin-top: 8px;
+	margin-bottom:16px;
+}
+
+.clapat-metabox-gallery-buttons input {
+	min-width:166px;
+	min-height: !important;
+	line-height:40px!important;
+	margin-right:16px!important;
+}

@@ -1,0 +1,121 @@
+<wpml-config>
+    <custom-types>
+        <custom-type translate="1">harington_portfolio</custom-type>
+    </custom-types>
+	<taxonomies>
+        <taxonomy translate="1">portfolio_category</taxonomy>
+    </taxonomies>
+    <custom-fields>
+		<custom-field action="copy">harington-opt-page-bknd-color-code</custom-field>
+		<custom-field action="copy">harington-opt-page-bknd-color</custom-field>
+		<custom-field action="copy">harington-opt-page-enable-hero</custom-field>
+		<custom-field action="copy">harington-opt-page-hero-img</custom-field>
+		<custom-field action="copy">harington-opt-page-invert-hero-header</custom-field>
+		<custom-field action="copy">harington-opt-page-video</custom-field>
+		<custom-field action="copy">harington-opt-page-video-webm</custom-field>
+		<custom-field action="copy">harington-opt-page-video-mp4</custom-field>
+		<custom-field action="translate">harington-opt-page-hero-caption-title</custom-field>
+		<custom-field action="copy">harington-opt-page-hero-caption-title-type</custom-field>
+		<custom-field action="translate">harington-opt-page-hero-caption-subtitle</custom-field>
+		<custom-field action="translate">harington-opt-page-hero-info-text</custom-field>
+		<custom-field action="translate">harington-opt-page-hero-scroll-caption</custom-field>
+		<custom-field action="copy">harington-opt-page-hero-parallax-caption</custom-field>
+		<custom-field action="copy">harington-opt-page-hero-caption-align</custom-field>
+		<custom-field action="translate">harington-opt-page-navigation-caption-first-line</custom-field>
+		<custom-field action="translate">harington-opt-page-navigation-caption-second-line</custom-field>
+		<custom-field action="copy">harington-opt-page-navigation-next-page</custom-field>
+		<custom-field action="copy">harington-opt-page-portfolio-filter-category</custom-field>
+		<custom-field action="copy">harington-opt-page-portfolio-grid-layout</custom-field>
+		<custom-field action="copy">harington-opt-page-portfolio-grid-content-position</custom-field>
+		<custom-field action="copy">harington-opt-blog-bknd-color-code</custom-field>
+		<custom-field action="copy">harington-opt-blog-bknd-color</custom-field>
+		<custom-field action="copy">harington-opt-blog-caption-alignment</custom-field>
+		<custom-field action="copy">harington-opt-portfolio-bknd-color-code</custom-field>
+		<custom-field action="copy">harington-opt-portfolio-bknd-color</custom-field>
+		<custom-field action="copy">harington-opt-portfolio-navigation-cursor-color</custom-field>
+		<custom-field action="copy">harington-opt-portfolio-thumb-size</custom-field>
+		<custom-field action="translate">harington-opt-portfolio-project-year</custom-field>
+		<custom-field action="copy">harington-opt-portfolio-hero-img</custom-field>
+		<custom-field action="copy">harington-opt-portfolio-invert-hero-header</custom-field>
+		<custom-field action="copy">harington-opt-portfolio-video</custom-field>
+		<custom-field action="copy">harington-opt-portfolio-video-webm</custom-field>
+		<custom-field action="copy">harington-opt-portfolio-video-mp4</custom-field>
+		<custom-field action="translate">harington-opt-portfolio-hero-caption-title</custom-field>
+		<custom-field action="copy">harington-opt-portfolio-hero-parallax-caption</custom-field>
+		<custom-field action="translate">harington-opt-portfolio-hero-scroll-caption</custom-field>
+	</custom-fields>
+    <admin-texts>
+        <key name="theme_mods_harington">
+			<key name="clapat_harington_enable_ajax" />
+			<key name="clapat_harington_enable_smooth_scrolling" />
+			<key name="clapat_harington_enable_magic_cursor" />
+			<key name="clapat_harington_primary_color" />
+			<key name="clapat_harington_enable_preloader" />
+			<key name="clapat_harington_preloader_hover_first_line" />
+			<key name="clapat_harington_preloader_hover_second_line" />
+			<key name="clapat_harington_preloader_text" />
+			<key name="clapat_harington_uppercase_text" />
+			<key name="clapat_harington_default_page_bknd_type" />
+			<key name="clapat_harington_enable_page_title_as_hero" />
+			<key name="clapat_harington_logo" />
+			<key name="clapat_harington_logo_light" />
+			<key name="clapat_harington_enable_fullscreen_menu" />
+			<key name="clapat_harington_header_menu_type" />			
+			<key name="clapat_harington_menu_btn_caption" />
+			<key name="clapat_harington_menu_background_color" />
+			<key name="clapat_harington_menu_background_type" />			
+			<key name="clapat_harington_enable_back_to_top" />
+			<key name="clapat_harington_back_to_top_caption" />
+			<key name="clapat_harington_footer_social_links_prefix" />
+			<key name="clapat_harington_footer_copyright" />
+			<key name="clapat_harington_footer_social_1" />
+			<key name="clapat_harington_footer_social_url_1" />
+			<key name="clapat_harington_footer_social_2" />
+			<key name="clapat_harington_footer_social_url_2" />
+			<key name="clapat_harington_footer_social_3" />
+			<key name="clapat_harington_footer_social_url_3" />
+			<key name="clapat_harington_footer_social_4" />
+			<key name="clapat_harington_footer_social_url_4" />
+			<key name="clapat_harington_footer_social_5" />
+			<key name="clapat_harington_footer_social_url_5" />
+			<key name="clapat_harington_showcase_transition_pattern_image" />
+			<key name="clapat_harington_showcase_transition_pattern_custom_image" />
+			<key name="clapat_harington_showcase_next_slide_caption" />
+			<key name="clapat_harington_showcase_prev_slide_caption" />
+			<key name="clapat_core_portfolio_custom_slug" />
+			<key name="clapat_harington_portfolio_nav_autotrigger" />
+			<key name="clapat_harington_view_project_caption_first" />
+			<key name="clapat_harington_view_project_caption_second" />
+			<key name="clapat_harington_portfolio_filter_all_caption" />
+			<key name="clapat_harington_portfolio_selected_works_caption" />
+			<key name="clapat_harington_portfolio_next_caption_first_line" />
+			<key name="clapat_harington_portfolio_next_caption_second_line" />
+			<key name="clapat_harington_portfolio_viewcase_caption" />
+			<key name="clapat_harington_portfolio_share_social_networks_caption" />
+			<key name="clapat_harington_portfolio_share_social_networks" />
+			<key name="clapat_harington_portfolio_navigation_order" />
+			<key name="clapat_harington_blog_navigation_type" />
+			<key name="clapat_harington_blog_excerpt_type" />
+			<key name="clapat_harington_blog_next_post_caption" />
+			<key name="clapat_harington_blog_prev_post_caption" />
+			<key name="clapat_harington_blog_no_posts_caption" />
+			<key name="clapat_harington_blog_read_more_caption" />
+			<key name="clapat_harington_blog_prev_posts_caption" />
+			<key name="clapat_harington_blog_next_posts_caption" />
+			<key name="clapat_harington_blog_default_title" />
+			<key name="clapat_harington_map_address" />
+			<key name="clapat_harington_map_marker" />
+			<key name="clapat_harington_map_zoom" />
+			<key name="clapat_harington_map_company_name" />
+			<key name="clapat_harington_map_company_info" />
+			<key name="clapat_harington_map_type" />
+			<key name="clapat_harington_map_api_key" />
+			<key name="clapat_harington_error_title" />
+			<key name="clapat_harington_error_info" />
+			<key name="clapat_harington_error_back_button" />
+			<key name="clapat_harington_error_back_button_hover_caption" />
+			<key name="clapat_harington_error_back_button_url" />
+			<key name="clapat_harington_error_page_bknd_type" />
+        </key>
+    </admin-texts>
+</wpml-config>

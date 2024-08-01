@@ -1,0 +1,499 @@
+/**
+ * Note that these styles are loaded *after* common styles, so that
+ * editor-specific styles using the same selectors will take precedence.
+ */
+
+	.editor-block-list__layout .editor-block-list__block.is-selected > .editor-block-list__block-edit::before {
+		background: rgba(0,0,0,0.02);
+	}
+	
+	.editor-styles-wrapper .clapat-image-added p {
+		display:block;
+		font-size: 12px;
+		line-height: 12px;
+		margin: 10px;
+	}
+	
+	.editor-inserter {
+		padding: 0 12px!important;
+	}
+	
+	.block-editor .editor-plain-text.clapat-inline-content, .clapat-inline-content, .clapat-inline-caption {
+		font-size:12px;
+		font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+	}
+	
+	.editor-styles-wrapper p.clapat-editor-label {
+		font-size:14px;
+		margin-bottom:0px;
+	}
+	
+	.clapat-color-palette {
+		margin-top:10px;
+		margin-bottom:60px;
+	}
+	
+	.clapat-color-palette .components-color-palette__item-wrapper {
+		display: inline-block;
+		margin-right: 10px;
+	}
+	
+	.clapat-color-palette .components-color-palette .components-color-palette__clear {
+		float: left;
+	}
+	
+	.clapat-range-control .components-range-control__number {
+		display:none;
+	}
+
+/* Shortcodes */
+	
+	.clapat-editor-block-wrapper {
+		display:block;
+		position:relative;
+		width: 100%;
+	}
+	
+	.block-editor-inner-blocks {
+		display:block;
+		position:relative;
+	}
+	
+	.block-editor-inner-blocks > .block-editor-block-list__layout {
+		display:block;
+		position:relative;
+	}
+	
+	.clapat-editor-slider > .block-editor-inner-blocks > .block-editor-block-list__layout {
+		display:block;		
+	}
+	
+	.clapat-editor-slider .block-editor-block-list__layout > .block-editor-block-list__block {
+		display:inline-flex;
+		vertical-align: top;
+		margin: 0;
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+	
+	.clapat-editor-slider .block-editor-block-list__layout > .block-list-appender {
+		display:block;
+		margin: 12px 0 6px 0;
+	}
+	
+	.clapat-editor-block-wrapper .block-editor-block-list__layout > .block-list-appender .block-list-appender__toggle {
+		margin:0;
+	}
+	
+	.clapat-editor-slider .components-button {
+		padding: 12px 12px;
+		box-shadow: inset 0 0 0 1px #1e1e1e;
+	}	
+	
+	.clapat-editor-block-wrapper.is-large .components-placeholder__label {
+		font-size: 18pt;
+		font-weight: 400;
+		color: #1e1e1e;
+	}
+	
+	.clapat-editor-container {
+		background: rgba(0,0,0,0.01);
+		box-sizing: border-box;
+		padding: 10px 15px;
+		clear: both;
+		border-radius: 3px;
+		border: 1px solid #ccc;
+	}
+	
+	.is-selected .clapat-editor-container {
+		background: rgba(0,0,0,0.03);
+	}
+	
+	.clapat-editor-slider, .clapat-editor-carousel, .clapat-editor-popup-image, .clapat-editor-parallax-image, .clapat-editor-popup-video, .clapat-editor-hosted-video, .clapat-editor-collage, .clapat-editor-clients, .clapat-editor-button-link, .clapat-editor-button-box, .clapat-editor-left-pinned-section, .clapat-editor-right-pinned-section, .clapat-editor-moving-title, .clapat-editor-marquee-text, .clapat-editor-accordion, .clapat-editor-icon-box, .clapat-editor-counter, .clapat-editor-team-members, .clapat-editor-team-members-carousel, .clapat-editor-google-map, .clapat-editor-portfolio-list, .clapat-editor-portfolio-grid, .clapat-editor-news {
+		box-sizing: border-box;
+		position: relative;
+		padding: 1em;
+		min-height: 200px;
+		width: 100%;
+		text-align: left;
+		margin: 0;
+		color: #1e1e1e;
+		-moz-font-smoothing: subpixel-antialiased;
+		-webkit-font-smoothing: subpixel-antialiased;
+		border-radius: 2px;
+		background-color: #fff;
+		box-shadow: inset 0 0 0 1px #1e1e1e;
+		outline: 1px solid transparent;
+	}
+	
+	.clapat-editor-image {
+		display: block;		
+	}
+	
+	.clapat-image-added {
+		width:170px;
+		height:auto;
+		display:block;
+	}
+	
+	.clapat-image-added img {
+		width: 100%;
+		position: relative;
+		display: block;
+		z-index:0;
+		object-position: center;
+		object-fit: cover;
+	}
+	
+	.clapat-image-added .components-placeholder__instructions {
+		width:100%;
+		text-align:center;
+		margin-top:10px;
+		margin-bottom: 8px;
+	}
+	
+	/* Popup Image */
+	
+	.clapat-editor-popup-image .clapat-editor-image {
+		width:50%;
+		display: inline-flex;
+	}
+	
+	.clapat-editor-popup-image .clapat-image-added {
+		width:100%;
+	}
+	
+	/* Popup Image */
+	
+	.clapat-editor-parallax-image .clapat-image-added {
+		width:100%;
+		padding: 0;
+	}
+	
+	/* Popup Video */
+	
+	.clapat-editor-popup-video .clapat-image-added {
+		width:100%;
+		padding: 0;
+	}
+	
+	/* Hosted Video */
+	
+	.clapat-editor-hosted-video .clapat-image-added {
+		width:100%;
+		padding: 0;
+	}
+	
+	.clapat-editor-hosted-video textarea {
+		overflow: hidden;
+		overflow-wrap: break-word;
+		resize: none;
+		height: 42px;
+		line-height: 42px;
+		background: #eee;
+		box-sizing: border-box;
+		padding: 0 14px;
+		border: 1px solid #ddd;
+		margin-bottom: 20px;
+		font-size: 13px;
+		font-weight: 500;
+	}
+	
+	/* Collage Gallery */
+	
+	.clapat-editor-collage .block-editor-block-list__layout > .block-editor-block-list__block {
+		display:inline-flex;
+		vertical-align: top;
+		margin: 0;
+		margin-bottom: 20px;
+		width:20%;
+		box-sizing: border-box;
+		padding:0 10px;
+	}
+	
+	.clapat-editor-collage .block-editor-block-list__layout > .block-editor-block-list__block > .clapat-editor-block-wrapper > .clapat-editor-image {
+		margin-bottom: 20px;
+	}
+	
+	.clapat-editor-collage .components-button {
+		padding: 12px 12px;
+		box-shadow: inset 0 0 0 1px #1e1e1e;		
+	}
+	
+	.clapat-editor-collage .components-button.clapat-image-added {
+		width: 100%;
+		height:170px;
+		padding-bottom: 40px;
+		overflow:hidden;
+	}
+	
+	.clapat-editor-collage .components-button.clapat-image-added img {
+		height:100%!important;
+	}
+	
+	.clapat-editor-collage .components-button.button.button-large {
+		padding: 0 5px;
+		width: 100%;
+		margin-bottom: 0px;
+		height: 170px;
+	}
+	
+	.clapat-editor-collage .components-button.button.button-large .components-placeholder__instructions {
+		margin-top:6px;
+		margin-bottom:0px;
+	}
+	
+	/* Clients Table */
+	
+	.clapat-editor-clients .block-editor-block-list__layout > .block-editor-block-list__block {
+		display: inline-flex;
+		vertical-align: top;
+		margin: 0;
+			margin-right: 0px;
+			margin-bottom: 0px;
+		margin-right: 0;
+		margin-bottom: 20px;
+		width: 25%;
+	}
+	
+	.clapat-editor-clients .block-editor-block-list__layout > .block-editor-block-list__block > .clapat-editor-block-wrapper {
+		box-sizing:border-box;
+		padding:0 10px;
+	}
+	
+	.clapat-editor-clients .clapat-image-added {
+		width:100%;
+		height:auto;
+		display:block;
+	}
+	
+	.clapat-editor-clients .components-button {
+		padding: 0 0 12px 0;
+		box-shadow: inset 0 0 0 1px #1e1e1e;
+		background: rgba(0,0,0,0.1);
+		margin-bottom: 10px;
+	}
+	
+	.clapat-editor-clients textarea {
+		overflow: hidden;
+		overflow-wrap: break-word;
+		resize: none;
+		height: 42px;
+		line-height: 42px;
+		background: #eee;
+		box-sizing: border-box;
+		padding: 0 14px;
+		border: 1px solid #ddd;
+		margin-bottom: 20px;
+		font-size: 13px;
+		font-weight: 500;
+	}
+	
+	.clapat-editor-clients .components-button.button.button-large {
+		padding: 0 9px;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	
+	/* Buttons */
+	
+	.clapat-editor-button-link {
+		min-height:80px;
+	}
+	
+	.clapat-editor-button-link textarea {
+		overflow: hidden;
+		overflow-wrap: break-word;
+		resize: none;
+		height: 42px;
+		line-height: 42px;
+		background: #eee;
+		box-sizing: border-box;
+		padding: 0 14px;
+		border: 1px solid #ddd;
+		margin-bottom: 20px;
+		font-size: 13px;
+		width: calc(50% - 20px);
+   		margin-right: 20px;
+		font-weight: 500;
+	}
+	
+	.clapat-editor-button-box {
+		min-height:80px;
+	}
+	
+	.clapat-editor-button-box textarea {
+		overflow: hidden;
+		overflow-wrap: break-word;
+		resize: none;
+		height: 42px;
+		line-height: 42px;
+		background: #eee;
+		box-sizing: border-box;
+		padding: 0 14px;
+		border: 1px solid #ddd;
+		margin-bottom: 20px;
+		font-size: 13px;
+		width: calc(50% - 20px);
+   		margin-right: 20px;
+		font-weight: 500;
+	}
+	
+	/* Pinned Sections */
+	
+	.clapat-editor-left-pinned-section > .block-editor-inner-blocks > .block-editor-block-list__layout > .block-editor-block-list__block, .clapat-editor-right-pinned-section > .block-editor-inner-blocks > .block-editor-block-list__layout > .block-editor-block-list__block {
+		  margin: 0;
+		  display: inline-flex;
+		  width: 50%;
+		  top: 0;
+		  vertical-align: top;
+	}
+	
+	.clapat-editor-left-pinned-section .clapat-editor-pinned-content {
+		box-sizing:border-box;
+		padding-right:20px;
+	}
+	
+	.clapat-editor-right-pinned-section .clapat-editor-pinned-content {
+		box-sizing:border-box;
+		padding-left:20px;
+	}
+	
+	.scrolling-element figcaption {
+		display:none;
+	}
+	
+	/* Moving Title and Marquee */
+	
+	.clapat-editor-moving-title, .clapat-editor-marquee-text {
+		min-height:80px;
+	}
+	
+	.clapat-editor-moving-title textarea, .clapat-editor-marquee-text textarea {
+		overflow: hidden;
+		overflow-wrap: break-word;
+		resize: none;
+		height: 42px;
+		line-height: 42px;
+		background: #eee;
+		box-sizing: border-box;
+		padding: 0 14px;
+		border: 1px solid #ddd;
+		margin-bottom: 20px;
+		font-size: 13px;
+		width: 100%;
+   		margin-right: 0px;
+		font-weight: 500;
+		color: #2c3338;
+	}
+	
+	/* Accordion */
+	
+	.clapat-editor-accordion {
+		min-height:80px;
+	}
+	
+	.clapat-editor-accordion textarea {
+		overflow: hidden;
+		overflow-wrap: break-word;
+		resize: none;
+		height: 42px;
+		line-height: 42px;
+		background: #eee;
+		box-sizing: border-box;
+		padding: 0 14px;
+		border: 1px solid #ddd;
+		margin-bottom: 20px;
+		font-size: 13px;
+		width: 100%;
+   		margin-right: 0px;
+		font-weight: 500;
+		color: #2c3338;
+	}
+	
+	/* Icon Boxes */
+	
+	.clapat-editor-icon-box textarea {
+		overflow: hidden;
+		overflow-wrap: break-word;
+		resize: none;
+		height: 42px;
+		line-height: 42px;
+		background: #eee;
+		box-sizing: border-box;
+		padding: 0 14px;
+		border: 1px solid #ddd;
+		margin-bottom: 20px;
+		font-size: 13px;
+		width: 100%;
+   		margin-right: 0px;
+		font-weight: 500;
+		color: #2c3338;
+	}
+	
+	/* Counter */
+	
+	.clapat-editor-counter {
+		min-height:80px;
+	}
+	
+	
+	/* Team Members List */
+	
+	.clapat-editor-team-members .block-editor-block-list__layout > .block-editor-block-list__block, .clapat-editor-team-members-carousel .block-editor-block-list__layout > .block-editor-block-list__block{
+		display: inline-flex;
+		vertical-align: top;
+		margin: 0;
+			margin-right: 0px;
+			margin-bottom: 0px;
+		margin-right: 0;
+		margin-bottom: 20px;
+		width: 25%;
+	}
+	
+	.clapat-editor-team-members .block-editor-block-list__layout > .block-editor-block-list__block > .clapat-editor-block-wrapper, .clapat-editor-team-members-carousel .block-editor-block-list__layout > .block-editor-block-list__block > .clapat-editor-block-wrapper {
+		box-sizing:border-box;
+		padding:0 10px;
+	}
+	
+	.clapat-editor-team-members .clapat-image-added, .clapat-editor-team-members-carousel .clapat-image-added {
+		width:100%;
+		height:auto;
+		display:block;
+	}
+	
+	.clapat-editor-team-members .components-button, .clapat-editor-team-members-carousel .components-button {
+		padding: 0 0 12px 0;
+		box-shadow: inset 0 0 0 1px #1e1e1e;
+		background: rgba(0,0,0,0.1);
+		margin-bottom: 10px;
+	}
+	
+	.clapat-editor-team-members textarea, .clapat-editor-team-members-carousel textarea {
+		overflow: hidden;
+		overflow-wrap: break-word;
+		resize: none;
+		height: 42px;
+		line-height: 42px;
+		background: #eee;
+		box-sizing: border-box;
+		padding: 0 14px;
+		border: 1px solid #ddd;
+		margin-bottom: 20px;
+		font-size: 13px;
+		font-weight: 500;
+	}
+	
+	.clapat-editor-team-members .components-button.button.button-large, .clapat-editor-team-members-carousel .components-button.button.button-large {
+		padding: 0 9px;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	
+	.clapat-editor-google-map {
+		min-height:80px;		
+	}
+	
+	.clapat-editor-portfolio-list, .clapat-editor-portfolio-grid, .clapat-editor-news {
+		min-height:60px;		
+	}
